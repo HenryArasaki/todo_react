@@ -1,3 +1,42 @@
 .done{
-    background-color: aqua;
+    color: rgba(46, 46, 46,0.5);
+    text-decoration: line-through;
+}
+
+.btnDone{
+    background-color: transparent;
+    border: 2px solid black;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.btnDoneDone{
+    background-color: greenyellow;
+}
+
+.taskName{
+    font-size: 20px;
+}
+
+.btnDelete{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.trashIcon{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+
+.trashIcon:hover{
+    cursor: pointer;
+}
+
+.trashDone{
+    filter: invert(40%) sepia(65%) saturate(5508%) hue-rotate(350deg) brightness(107%) contrast(101%);
+    display: block;
 }

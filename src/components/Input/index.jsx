@@ -17,7 +17,7 @@ export default function Input(props) {
     function handleSubmitClick(e) {
         e.preventDefault()
         if (text != "") {
-            props.setTasks([...props.tasks, { name: text, completed: false, id: (Math.random().toString(16).slice(2))}])
+            props.setTasks([...props.tasks, { name: text, completed: false, id: (Math.random().toString(16).slice(2)),done:false}])
             setText("")
         }
     }
@@ -28,7 +28,7 @@ export default function Input(props) {
         <form onSubmit={handleSubmitClick}>
             <label htmlFor="taskInput">Tarefa</label>
             <input type="text" name="taskInput" id="taskInput" onChange={handleInputChange} value={text} />
-            <button type="submit">Enviar</button>
+            <button className='btnSend' type="submit">Enviar</button>
         </form>
     )
 }

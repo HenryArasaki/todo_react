@@ -1,0 +1,28 @@
+form{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#taskInput{
+    border: none;
+    border-bottom: 2px solid #d53b90;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+input:focus{
+    border: none;
+}
+
+.btnSend{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    background-color: #d4c2b6;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.btnSend:hover{
+    cursor:pointer;
+}
